@@ -1,5 +1,5 @@
 # Stage 1: Build the Java application using Maven
-FROM maven:3.8.7-openjdk-17 AS build
+FROM maven:3.8.8-openjdk-17 AS build
 
 # Set the working directory for the build
 WORKDIR /app
@@ -26,8 +26,9 @@ WORKDIR /app
 COPY --from=build /app/target/*.jar /app/myapp.jar
 
 # Expose the port your application runs on
-EXPOSE 8081
+EXPOSE 8080
 
 # Run the application
 CMD ["java", "-jar", "/app/myapp.jar"]
+
 
