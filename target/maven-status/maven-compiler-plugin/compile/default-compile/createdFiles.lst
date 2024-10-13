@@ -1,0 +1,4 @@
+com/school/MainClass.class
+com/school/studentcollator/service/StudentService.class
+com/school/studentcollator/controller/StudentController.class
+com/school/studentcollator/model/Student.class
