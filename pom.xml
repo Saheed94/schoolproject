@@ -13,6 +13,7 @@
         <maven.compiler.target>17</maven.compiler.target>
         <spring.boot.version>3.1.0</spring.boot.version> <!-- Specify Spring Boot version here -->
         <h2.version>2.2.220</h2.version> <!-- Specify H2 Database version here -->
+        <slf4j.version>1.7.36</slf4j.version> <!-- Specify SLF4J version -->
     </properties>
 
     <dependencies>
@@ -32,6 +33,17 @@
             <artifactId>spring-boot-starter-test</artifactId>
             <version>${spring.boot.version}</version>
             <scope>test</scope>
+        </dependency>
+        <!-- Optional: If you want to include Logback explicitly -->
+        <dependency>
+            <groupId>ch.qos.logback</groupId>
+            <artifactId>logback-classic</artifactId>
+            <version>1.2.10</version>
+        </dependency>
+        <dependency>
+            <groupId>org.slf4j</groupId>
+            <artifactId>slf4j-api</artifactId>
+            <version>${slf4j.version}</version>
         </dependency>
     </dependencies>
 
